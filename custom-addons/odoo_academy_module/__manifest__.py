@@ -9,6 +9,7 @@
     'license': 'LGPL-3', 
     'data': [
         'security/ir.model.access.csv',
+        #'views/student_view.xml',
     ],
     'installable': True,
     'application': True,
