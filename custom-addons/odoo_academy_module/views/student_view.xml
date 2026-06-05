@@ -7,11 +7,14 @@
             <form string="Student Form">
                 <sheet>
                     <group>
-                        <field name="photo"/>
+                        <field name="photo" string="Foto" widget="image"/>
                         <field name="name"/>
                         <field name="last_name"/>
                         <field name="email"/>
                         <field name="birthdate"/>
+                        <field name="product"/>
+                        <field name="curse_ids" widget="many2many_tags"/>
+                        <field name="school_id" readonly="1"/>
                     </group>
                 </sheet>
             </form>
