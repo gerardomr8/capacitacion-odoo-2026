@@ -9,4 +9,14 @@
         <field name="perm_create" eval="True"/>
         <field name="perm_unlink" eval="True"/>
     </record>
+
+    <record id="rules_teacher" model="ir.rule">
+        <field name="name">Teacher Rule</field>
+        <field name="model_id" ref="odoo_academy_module.model_academy_teacher"/>
+        <field name="domain_force">[('school_id', 'in', user.company_ids.ids)]</field>
+        <field name="perm_read" eval="True"/>
+        <field name="perm_write" eval="True"/>
+        <field name="perm_create" eval="True"/>
+        <field name="perm_unlink" eval="True"/>
+    </record>
 </odoo>

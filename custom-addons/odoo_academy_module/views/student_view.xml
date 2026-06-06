@@ -12,9 +12,14 @@
                         <field name="last_name"/>
                         <field name="email"/>
                         <field name="birthdate"/>
-                        <field name="product"/>
-                        <field name="curse_ids" widget="many2many_tags"/>
+                        <field name="product"/>                        
                         <field name="school_id" readonly="1"/>
+                        <field name="course_ids">
+                            <list string="Courses">
+                                <field name="name"/>
+                                <field name="description"/>
+                            </list>
+                        </field>
                     </group>
                 </sheet>
             </form>
@@ -41,9 +46,17 @@
     </record>
 
     <menuitem
-        id="model_studen_menu"
-        name="Academy Students"
+        id="menu_academy_root"
+        name="Academy"
+        sequence="10"
+        groups="base.group_user"
+        />    
+    
+    <menuitem
+        id="menu_academy_student"
+        name="Students"
+        parent="menu_academy_root"
         action="action_academy_student"
-        sequence="10"/>    
+        sequence="10"/>
 
 </odoo>
