@@ -18,6 +18,7 @@
         'views/teacher_view.xml',
         'views/subject_view.xml',
         'views/director_view.xml',
+        'views/res_users.xml',
         
         'template/template_student.xml',
         'template/template_success.xml',

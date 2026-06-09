@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_users_form_inherit" model="ir.ui.view">
+        <field name="name">res.users.form.inherit.academy</field>
+        <field name="model">res.users</field>
+        <field name="inherit_id" ref="base.view_users_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page name="security_academy" string="Security Academy" class="oe_group">
+                    <group string="Student Access Rights" class="oe_group">
+                        <field name="student_read"/>
+                        <field name="student_write"/>
+                        <field name="student_create"/>
+                        <field name="student_unlink"/>
+                    </group>                    
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
