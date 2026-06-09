@@ -11,12 +11,17 @@
     'data': [
         'security/ir.model.access.csv',
         'security/groups.xml',
+        
         'views/student_view.xml',
         'views/rules_student.xml',
         'views/course_view.xml',
         'views/teacher_view.xml',
         'views/subject_view.xml',
         'views/director_view.xml',
+        
+        'template/template_student.xml',
+        'template/template_success.xml',
+        'template/template_error.xml',
     ],
     'installable': True,
     'application': True,

@@ -22,4 +22,4 @@ class AcademyStudent(models.Model):
         vals_list[0]['school_id'] = self.env.user.company_id.id
         partners = super().create(vals_list)
         return partners
-        
+    

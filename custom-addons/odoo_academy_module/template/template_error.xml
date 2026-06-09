@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <template id="error_registration" name="Error en el Registro">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_estructure oe_empty">
+                <section class="oe_main_content" style="padding: 20px;">
+                    <div class="oe_form_view">
+                        <h1>¡Error en el Registro!</h1>
+                        <p>Ya existe un estudiante registrado con el mismo correo electrónico.</p>
+                    </div>
+                </section>
+            </div>
+        </t>
+
+    </template>
+</odoo>

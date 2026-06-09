@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <template id="formulario_estudiantes" name="Formulario de Estudiantes">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_estructure oe_empty">
+                <section class="oe_main_content" style="padding: 20px;">
+                    <div class="oe_form_view">
+                        <h1>Formulario de Estudiantes</h1>
+                        <h2>Información Personal</h2>
+                        <p>Llena de forma correcta la información solicitada.</p>
+                        <form action="/registro/estudiantes" method="post">
+                            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                            <div class="form-group">
+                                <label for="name">Nombre:</label>
+                                <input type="text" id="name" name="name" class="form-control" required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="last_name">Apellido:</label>
+                                <input type="text" id="last_name" name="lastname"
+                                    class="form-control" required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Correo Electrónico:</label>
+                                <input type="email" id="email" name="email" class="form-control" required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="birthdate">Fecha de Nacimiento:</label>
+                                <input type="date" id="birthdate" name="birthdate"
+                                    class="form-control" required="required"/>
+                            </div>
+                            <div class="form-group">
+                                <label for="school">Escuela:</label>
+                                <select id="school" name="school" class="form-control" required="required">
+                                    <option value="">Selecciona una escuela</option>
+                                    <option value="36">Escuela 1</option>
+                                    <option value="37">Escuela 2</option>
+                                </select>
+                            </div>
+                            <input type="submit" class="btn btn-primary" value="Registrar"/>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </t>
+
+    </template>
+</odoo>

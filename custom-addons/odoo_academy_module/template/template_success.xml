@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <template id="registration_success" name="Registro Exitoso">
+        <t t-call="website.layout">
+            <div id="wrap" class="oe_estructure oe_empty">
+                <section class="oe_main_content" style="padding: 20px;">
+                    <div class="oe_form_view">
+                        <h1>¡Registro Exitoso!</h1>
+                        <p>Gracias por registrarte en nuestra academia. Tu información ha sido recibida correctamente.</p>
+                    </div>
+                </section>
+            </div>
+        </t>
+    </template>
+</odoo>
